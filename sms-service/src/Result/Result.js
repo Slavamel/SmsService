@@ -2,6 +2,9 @@ import React from "react";
 import { Table, Badge } from 'reactstrap';
 
 const result = (props) => {
+  if (!props.messages || props.messages.length === 0) {
+    return null;
+  }
 
   return (
     <Table hover>
@@ -17,7 +20,7 @@ const result = (props) => {
       </thead>
       <tbody>
         {props.messages.map(message => (
-          <tr key={message.id}>
+          <tr key={message.uid}>
             <th scope="row">{message.mobile}</th>
             <td>{message.text}</td>
             <td>{message.createDate}</td>
