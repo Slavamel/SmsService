@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Form, FormGroup, Label, Col, Input, Button } from 'reactstrap';
+import { Row, Form, Col, Button } from 'reactstrap';
 
 import RadioButtons from './../common/RadioButtons';
 import CustomInput from './../common/CustomInput';
